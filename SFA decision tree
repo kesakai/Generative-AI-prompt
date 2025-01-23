@@ -103,54 +103,51 @@ graph TD
 ```mermaid
 
 flowchart TB
-    A[課題はあるか] -->|YES| B[Office製品との連携は重要か]
-    A -->|NO| Z[まず課題を明確化してください\nスコア1]
+    A[課題はあるか] --> |YES| B[Office製品との連携は重要か]
+    A --> |NO| Z[課題を明確化してください スコア1]
 
-    B -->|YES| C[既にMicrosoftライセンスは十分にあるか]
-    B -->|NO| D[既存システムとの連携よりもUIの安定を重視するか]
+    B --> |YES| C[Microsoftライセンスは十分にあるか]
+    B --> |NO| D[既存システム連携よりもUIの安定を重視するか]
 
-    C -->|YES| E[大規模導入を検討しているか]
-    C -->|NO| F[APIや追加アプリによる連携拡張を検討したいか]
+    C --> |YES| E[大規模導入を検討しているか]
+    C --> |NO| F[APIや追加アプリによる拡張を検討するか]
 
-    D -->|YES| G[必要な機能は標準範囲で対応できそうか]
-    D -->|NO| H[高度なカスタマイズやアプリの追加を優先したいか]
+    D --> |YES| G[必要機能は標準範囲で足りそうか]
+    D --> |NO| H[高度なカスタマイズやアプリ追加を優先するか]
 
-    E -->|YES| I[ボリュームディスカウント効果を最大化したいか]
-    E -->|NO| J[OutlookやExcelとシームレスに扱える環境が欲しいか]
+    E --> |YES| I[ボリュームディスカウントを最大化したいか]
+    E --> |NO| J[OutlookやExcelをシームレスに扱いたいか]
 
-    F -->|YES| K[AppExchangeの豊富な連携を重視するか]
-    F -->|NO| L[Microsoft環境に近い操作感を好むか]
+    F --> |YES| K[AppExchangeの豊富な連携を重視するか]
+    F --> |NO| L[Microsoft製品と似た操作感を好むか]
 
-    G -->|YES| M[クラウド基盤の安定性を最重視するか]
-    G -->|NO| N[AppExchangeなどカスタム機能導入で競合差別化したいか]
+    G --> |YES| M[クラウド基盤の安定性を最重視するか]
+    G --> |NO| N[カスタム機能追加で競合優位を狙いたいか]
 
-    H -->|YES| O[EinsteinなどAI機能の活用を重視するか]
-    H -->|NO| P[Power Platformなど既存Office資産を最大活用したいか]
+    H --> |YES| O[EinsteinなどAI機能を積極的に活用したいか]
+    H --> |NO| P[Power PlatformなどOffice資産を最大活用したいか]
 
-    I -->|YES| Q[導入スコープを段階的に拡大する予定か]
-    I -->|NO| R[早期にOffice連携をフルに生かす必要があるか]
+    I --> |YES| Q[導入スコープを段階的に拡大する予定か]
+    I --> |NO| R[Office連携を早期にフル活用したいか]
 
-    %% ----------------- 分岐後の最終ノード例 ----------------- %%
-    %% Dynamics系に寄りつつ強い要件を満たすパス
-    Q -->|YES| DynHigh[Dynamics 365 Sales推奨 スコア9]
-    Q -->|NO| DynMid[Dynamics 365 Sales推奨 スコア8]
-    R -->|YES| DynHigh2[Dynamics 365 Sales推奨 スコア9]
-    R -->|NO| DynMid2[Dynamics 365 Sales推奨 スコア7]
+    %% --- 最終的な提案先ノード (Dynamics系) ---
+    Q --> |YES| DynHigh[Dynamics 365 Sales推奨 スコア9]
+    Q --> |NO| DynMid[Dynamics 365 Sales推奨 スコア8]
+    R --> |YES| DynHigh2[Dynamics 365 Sales推奨 スコア9]
+    R --> |NO| DynMid2[Dynamics 365 Sales推奨 スコア7]
 
-    %% Salesforce系に寄りつつ強い要件を満たすパス
-    K -->|YES| SfHigh[Salesforce推奨 スコア9]
-    K -->|NO| SfMid[Salesforce推奨 スコア8]
-    N -->|YES| SfHigh2[Salesforce推奨 スコア9]
-    N -->|NO| SfMid2[Salesforce推奨 スコア7]
-    O -->|YES| SfHigh3[Salesforce推奨 スコア9]
-    O -->|NO| SfMid3[Salesforce推奨 スコア8]
-
-    %% それ以外のDynamics系最終ノード
     J --> DynMid3[Dynamics 365 Sales推奨 スコア7]
     L --> DynMid4[Dynamics 365 Sales推奨 スコア7]
     P --> DynMid5[Dynamics 365 Sales推奨 スコア7]
     M --> DynMid6[Dynamics 365 Sales推奨 スコア6]
 
+    %% --- 最終的な提案先ノード (Salesforce系) ---
+    K --> |YES| SfHigh[Salesforce推奨 スコア9]
+    K --> |NO| SfMid[Salesforce推奨 スコア8]
+    N --> |YES| SfHigh2[Salesforce推奨 スコア9]
+    N --> |NO| SfMid2[Salesforce推奨 スコア7]
+    O --> |YES| SfHigh3[Salesforce推奨 スコア9]
+    O --> |NO| SfMid3[Salesforce推奨 スコア8]
 
 ```
 
