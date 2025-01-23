@@ -62,7 +62,7 @@ Dynamics CRM　と　SFDCのどちらの製品が適切かをヒアリングす�
 
 ## 結果
 
-```mermaic
+```mermaid
 graph TD
     A["貴社にはSFA導入の課題がありますか？"]
     A -- "YES" --> B["既存のMicrosoft製品（Outlook, Excel, Wordなど）を日常的に利用していますか？"]
