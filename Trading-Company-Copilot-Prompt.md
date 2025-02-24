@@ -1,5 +1,5 @@
-# Create AI Scenarios
-GenerativeAI を使って、あなたの業務におけるAI活用シナリオを作成するプロンプトです。
+# Trading-Company-Copilot-Prompt.md
+Copilotを使って、商社関連業務を効率化するためのプロンプト集です。
 
 # 注意点
 全ては自己責任です。ご利用は十二分に注意をしてください。以下は ChatGPT に限らず情報管理の一般論とも言えますが。
